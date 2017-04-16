@@ -1,0 +1,81 @@
+$color-panel: rgba(0, 0, 0, 0.8)
+$menu-panel-box-shadow: -4px 2px 5px 0 rgba(50, 50, 50, 0.37)
+$color-panel-overlay: none
+
+$menu-btn-size: 30px
+$menu-btn-height: 20px
+$menu-btn-width: 30px
+$menu-btn-line-size: 2px
+$menu-btn-line-color: white
+$menu-btn-line-radius: $menu-btn-line-size
+$menu-btn-to-translate: ($menu-btn-height - $menu-btn-line-size) / 2
+$menu-btn-bounce: cubic-bezier(.87,-.50,.19,1.50)
+
+@import hamburgers.scss
+
+// .menu-btn
+//   display: none
+
+// .panel-content
+//     &__menu
+//         li
+//             display: inline-block
+//             margin-right: 5px
+
+// @media (max-width: 768px)
+
+.menu-btn
+  display: block
+
+.menu-panel
+  &:before
+    content: ""
+  &:after
+    position: absolute
+    top: 0
+    left: 0
+    width: 50%
+    height: 100vh
+    background: transparent
+    cursor: pointer
+
+  .visible-block
+    top: 0
+    visibility: visible
+
+
+  &.visible-block:after
+    content: ''
+    width: 100%
+    transition: background 0.1s 0.3s
+    background-color: $color-panel-overlay
+
+.menu-panel__container
+  position: fixed
+  width: 50%
+  height: 100vh
+  top: 0
+  background-color: $color-panel
+  z-index: 61
+  box-shadow: $menu-panel-box-shadow 
+  transition-property: -webkit-transform
+  transition-property: transform
+  transition-property: transform, -webkit-transform
+  transition-duration: 0.3s
+  transition-delay: 0.3s
+
+.menu-panel_from-left .menu-panel__container
+  left: 0
+  -webkit-transform: translate3d(-100%, 0, 0)
+  transform: translate3d(-100%, 0, 0)
+
+.menu-panel_from-right .menu-panel__container
+  right: 0
+  -webkit-transform: translate3d(100%, 0, 0)
+  transform: translate3d(100%, 0, 0)
+
+.visible-block .menu-panel__container
+  -webkit-transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0)
+  transition-delay: 0s
+
