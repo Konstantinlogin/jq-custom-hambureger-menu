@@ -5,12 +5,9 @@ $(document).ready(function () {
         
         event.preventDefault();
 
-        $(this).toggleClass('menu-btn--fixed open');
+        $(this).toggleClass('menu-btn_fixed open');
 
         $('.menu-panel').toggleClass('visible-block');
-
-
-
 
     });
     
@@ -18,7 +15,7 @@ $(document).ready(function () {
     $('.menu-panel').on('click', function (event) {
         if ($(event.target).is('.menu-panel')) {
             $(this).removeClass('visible-block');
-            $('.menu-btn').removeClass('menu-btn--fixed open');
+            $('.menu-btn').removeClass('menu-btn_fixed open');
             event.preventDefault();
         }
 

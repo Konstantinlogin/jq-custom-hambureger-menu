@@ -1,30 +1,5 @@
 .menu-btn {
-  position: absolute;
-  height: 30px;
-  width: 30px;
-  cursor: pointer;
-  overflow: hidden;
-  z-index: 63;
-  /*--- Close Button 1 ---*/
-  /*--- Close Button 2 ---*/
-  /*--- Close Button 3 ---*/
-  /*--- Close Button 4 ---*/
-  /*--- Close Button 5 ---*/
-  /*--- Close Button 6 ---*/
-  /*--- Back Arrow 1 ---*/
-  /*--- Back Arrow 2 ---*/
-  /*--- Back Arrow 3 ---*/
-  /*--- Back Arrow 4 ---*/
-  /*--- Back Arrow 5 ---*/
-  /*--- Back Arrow 6 ---*/ }
-  .menu-btn--right {
-    right: 0; }
-  .menu-btn--left {
-    left: 0; }
-  .menu-btn--fixed-default {
-    position: fixed; }
-  .menu-btn--fixed {
-    position: fixed; }
+  /*_- Close Button 6 _-*/ }
   .menu-btn__icon {
     position: absolute;
     width: 30px;
@@ -42,46 +17,46 @@
     width: 100%;
     border-radius: 2px;
     pointer-events: none; }
-    .menu-btn__line--1 {
+    .menu-btn__line_1 {
       top: 0; }
-    .menu-btn__line--2 {
+    .menu-btn__line_2 {
       top: 0;
       bottom: 0;
       margin: auto; }
-    .menu-btn__line--3 {
+    .menu-btn__line_3 {
       bottom: 0; }
-  .menu-btn--close1 .menu-btn__line--1 {
+  .menu-btn_close1 .menu-btn__line_1 {
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
-  .menu-btn--close1 .menu-btn__line--2 {
+  .menu-btn_close1 .menu-btn__line_2 {
     right: 0;
-    transition: right .2s ease-in-out,  opacity .35s ease-in-out,  -webkit-transform 0s ease-in-out;
-    transition: right .2s ease-in-out,  opacity .35s ease-in-out,  transform 0s ease-in-out;
-    transition: right .2s ease-in-out,  opacity .35s ease-in-out,  transform 0s ease-in-out,  -webkit-transform 0s ease-in-out; }
-  .menu-btn--close1 .menu-btn__line--3 {
+    transition: right .2s ease-in-out, opacity .35s ease-in-out,  -webkit-transform 0s ease-in-out;
+    transition: right .2s ease-in-out, opacity .35s ease-in-out,  transform 0s ease-in-out;
+    transition: right .2s ease-in-out, opacity .35s ease-in-out,  transform 0s ease-in-out, -webkit-transform 0s ease-in-out; }
+  .menu-btn_close1 .menu-btn__line_3 {
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
-  .menu-btn--close1.open .menu-btn__line--1 {
+  .menu-btn_close1.open .menu-btn__line_1 {
     -webkit-transform: translate3d(0, 9px, 0) rotate(135deg);
     transform: translate3d(0, 9px, 0) rotate(135deg); }
-  .menu-btn--close1.open .menu-btn__line--2 {
+  .menu-btn_close1.open .menu-btn__line_2 {
     opacity: 0;
     right: -120px;
     -webkit-transform: translate3d(-30px, 0, 0);
     transform: translate3d(-30px, 0, 0);
-    transition: opacity .2s ease-in-out,  right .0s ease-in-out .2s,  -webkit-transform .2s ease-in-out;
-    transition: opacity .2s ease-in-out,  transform .2s ease-in-out,  right .0s ease-in-out .2s;
-    transition: opacity .2s ease-in-out,  transform .2s ease-in-out,  right .0s ease-in-out .2s,  -webkit-transform .2s ease-in-out; }
-  .menu-btn--close1.open .menu-btn__line--3 {
+    transition: opacity .2s ease-in-out, right .0s ease-in-out .2s, -webkit-transform .2s ease-in-out;
+    transition: opacity .2s ease-in-out, transform .2s ease-in-out, right .0s ease-in-out .2s;
+    transition: opacity .2s ease-in-out, transform .2s ease-in-out, right .0s ease-in-out .2s, -webkit-transform .2s ease-in-out; }
+  .menu-btn_close1.open .menu-btn__line_3 {
     -webkit-transform: translate3d(0, -9px, 0) rotate(-135deg);
     transform: translate3d(0, -9px, 0) rotate(-135deg); }
-  .menu-btn--close2 .menu-btn__line--1 {
-    transition: top .2s ease-in-out .3s,  -webkit-transform .3s ease-in-out;
-    transition: transform .3s ease-in-out,  top .2s ease-in-out .3s;
-    transition: transform .3s ease-in-out,  top .2s ease-in-out .3s,  -webkit-transform .3s ease-in-out; }
-  .menu-btn--close2 .menu-btn__line--1:before {
+  .menu-btn_close2 .menu-btn__line_1 {
+    transition: top .2s ease-in-out .3s, -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, top .2s ease-in-out .3s;
+    transition: transform .3s ease-in-out, top .2s ease-in-out .3s, -webkit-transform .3s ease-in-out; }
+  .menu-btn_close2 .menu-btn__line_1:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -91,37 +66,37 @@
     transition: -webkit-transform .1s ease-in-out .2s;
     transition: transform .1s ease-in-out .2s;
     transition: transform .1s ease-in-out .2s, -webkit-transform .1s ease-in-out .2s; }
-  .menu-btn--close2 .menu-btn__line--2 {
+  .menu-btn_close2 .menu-btn__line_2 {
     transition: opacity .0s ease-in-out .3s; }
-  .menu-btn--close2 .menu-btn__line--3 {
-    transition: opacity .0s ease-in-out .3s,  bottom .2s ease-in-out .3s; }
-  .menu-btn--close2.open .menu-btn__line--1 {
+  .menu-btn_close2 .menu-btn__line_3 {
+    transition: opacity .0s ease-in-out .3s, bottom .2s ease-in-out .3s; }
+  .menu-btn_close2.open .menu-btn__line_1 {
     top: 9px;
     -webkit-transform: rotate(135deg);
     -ms-transform: rotate(135deg);
     transform: rotate(135deg);
-    transition: top .3s ease-in-out,  -webkit-transform .3s linear .3s;
-    transition: top .3s ease-in-out,  transform .3s linear .3s;
-    transition: top .3s ease-in-out,  transform .3s linear .3s,  -webkit-transform .3s linear .3s; }
-  .menu-btn--close2.open .menu-btn__line--1:before {
+    transition: top .3s ease-in-out, -webkit-transform .3s linear .3s;
+    transition: top .3s ease-in-out, transform .3s linear .3s;
+    transition: top .3s ease-in-out, transform .3s linear .3s, -webkit-transform .3s linear .3s; }
+  .menu-btn_close2.open .menu-btn__line_1:before {
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
     transition: -webkit-transform .1s ease-in-out .3s;
     transition: transform .1s ease-in-out .3s;
     transition: transform .1s ease-in-out .3s, -webkit-transform .1s ease-in-out .3s; }
-  .menu-btn--close2.open .menu-btn__line--2 {
+  .menu-btn_close2.open .menu-btn__line_2 {
     opacity: 0;
     transition: opacity .0s ease-in-out .3s; }
-  .menu-btn--close2.open .menu-btn__line--3 {
+  .menu-btn_close2.open .menu-btn__line_3 {
     bottom: 9px;
     opacity: 0;
-    transition: bottom .3s ease-in-out,  opacity .0s ease-in-out .3s; }
-  .menu-btn--close3 .menu-btn__line--1 {
-    transition: top .2s ease-in-out .2s,  -webkit-transform .2s ease-in-out .15s;
-    transition: transform .2s ease-in-out .15s,  top .2s ease-in-out .2s;
-    transition: transform .2s ease-in-out .15s,  top .2s ease-in-out .2s,  -webkit-transform .2s ease-in-out .15s; }
-  .menu-btn--close3 .menu-btn__line--1:before {
+    transition: bottom .3s ease-in-out, opacity .0s ease-in-out .3s; }
+  .menu-btn_close3 .menu-btn__line_1 {
+    transition: top .2s ease-in-out .2s, -webkit-transform .2s ease-in-out .15s;
+    transition: transform .2s ease-in-out .15s, top .2s ease-in-out .2s;
+    transition: transform .2s ease-in-out .15s, top .2s ease-in-out .2s, -webkit-transform .2s ease-in-out .15s; }
+  .menu-btn_close3 .menu-btn__line_1:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -131,38 +106,38 @@
     transition: -webkit-transform .15s ease-in-out;
     transition: transform .15s ease-in-out;
     transition: transform .15s ease-in-out, -webkit-transform .15s ease-in-out; }
-  .menu-btn--close3 .menu-btn__line--2 {
+  .menu-btn_close3 .menu-btn__line_2 {
     transition: opacity .0s ease-in-out .35s; }
-  .menu-btn--close3 .menu-btn__line--3 {
+  .menu-btn_close3 .menu-btn__line_3 {
     transition: opacity .0s ease-in-out .25s; }
-  .menu-btn--close3.open .menu-btn__line--1 {
+  .menu-btn_close3.open .menu-btn__line_1 {
     top: 18px;
     -webkit-transform: translate3d(0, -9px, 0) rotate(-45deg);
     transform: translate3d(0, -9px, 0) rotate(-45deg);
-    transition: top .2s ease-in-out,  -webkit-transform .15s ease-in-out .2s;
-    transition: top .2s ease-in-out,  transform .15s ease-in-out .2s;
-    transition: top .2s ease-in-out,  transform .15s ease-in-out .2s,  -webkit-transform .15s ease-in-out .2s; }
-  .menu-btn--close3.open .menu-btn__line--1:before {
+    transition: top .2s ease-in-out, -webkit-transform .15s ease-in-out .2s;
+    transition: top .2s ease-in-out, transform .15s ease-in-out .2s;
+    transition: top .2s ease-in-out, transform .15s ease-in-out .2s, -webkit-transform .15s ease-in-out .2s; }
+  .menu-btn_close3.open .menu-btn__line_1:before {
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     transition: -webkit-transform .15s ease-in-out .3s;
     transition: transform .15s ease-in-out .3s;
     transition: transform .15s ease-in-out .3s, -webkit-transform .15s ease-in-out .3s; }
-  .menu-btn--close3.open .menu-btn__line--2 {
+  .menu-btn_close3.open .menu-btn__line_2 {
     opacity: 0;
     transition: opacity .0s ease-in-out .1s; }
-  .menu-btn--close3.open .menu-btn__line--3 {
+  .menu-btn_close3.open .menu-btn__line_3 {
     opacity: 0;
     transition: opacity .0s ease-in-out .2s; }
-  .menu-btn--close4 .menu-btn__line--1,
-  .menu-btn--close4 .menu-btn__line--3 {
+  .menu-btn_close4 .menu-btn__line_1,
+  .menu-btn_close4 .menu-btn__line_3 {
     transition: all .2s ease-in-out; }
-  .menu-btn--close4 .menu-btn__line--2 {
+  .menu-btn_close4 .menu-btn__line_2 {
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
-  .menu-btn--close4 .menu-btn__line--2:before {
+  .menu-btn_close4 .menu-btn__line_2:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -172,91 +147,91 @@
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
-  .menu-btn--close4.open .menu-btn__line--1 {
+  .menu-btn_close4.open .menu-btn__line_1 {
     opacity: 0;
     -webkit-transform: translate3d(-18px, 0, 0);
     transform: translate3d(-18px, 0, 0);
     transition: all .2s ease-in-out; }
-  .menu-btn--close4.open .menu-btn__line--2 {
+  .menu-btn_close4.open .menu-btn__line_2 {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
-  .menu-btn--close4.open .menu-btn__line--2:before {
+  .menu-btn_close4.open .menu-btn__line_2:before {
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
-  .menu-btn--close4.open .menu-btn__line--3 {
+  .menu-btn_close4.open .menu-btn__line_3 {
     opacity: 0;
     -webkit-transform: translate3d(18px, 0, 0);
     transform: translate3d(18px, 0, 0);
     transition: all .2s ease-in-out; }
-  .menu-btn--close5 .menu-btn__line--4,
-  .menu-btn--close5 .menu-btn__line--5 {
+  .menu-btn_close5 .menu-btn__line_4,
+  .menu-btn_close5 .menu-btn__line_5 {
     opacity: 0;
     top: 9px;
-    transition: opacity .2s ease-in-out, -webkit-transform .2s ease-in-out;
-    transition: opacity .2s ease-in-out, transform .2s ease-in-out;
-    transition: opacity .2s ease-in-out, transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
-  .menu-btn--close5 .menu-btn__line--1 {
+    transition: opacity .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+    transition: opacity .2s ease-in-out, transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
+  .menu-btn_close5 .menu-btn__line_1 {
     transition: width .2s ease-in-out .4s; }
-  .menu-btn--close5 .menu-btn__line--2 {
+  .menu-btn_close5 .menu-btn__line_2 {
     transition: width .2s ease-in-out .3s; }
-  .menu-btn--close5 .menu-btn__line--3 {
+  .menu-btn_close5 .menu-btn__line_3 {
     transition: width .2s ease-in-out .2s; }
-  .menu-btn--close5 .menu-btn__line--4 {
+  .menu-btn_close5 .menu-btn__line_4 {
     -webkit-transform: rotate(45deg) translate3d(-30px, 0, 0);
     transform: rotate(45deg) translate3d(-30px, 0, 0);
-    transition: opacity .2s ease-in-out .2s,  -webkit-transform .2s ease-in-out .2s;
-    transition: opacity .2s ease-in-out .2s,  transform .2s ease-in-out .2s;
-    transition: opacity .2s ease-in-out .2s,  transform .2s ease-in-out .2s,  -webkit-transform .2s ease-in-out .2s; }
-  .menu-btn--close5 .menu-btn__line--5 {
+    transition: opacity .2s ease-in-out .2s, -webkit-transform .2s ease-in-out .2s;
+    transition: opacity .2s ease-in-out .2s, transform .2s ease-in-out .2s;
+    transition: opacity .2s ease-in-out .2s, transform .2s ease-in-out .2s, -webkit-transform .2s ease-in-out .2s; }
+  .menu-btn_close5 .menu-btn__line_5 {
     -webkit-transform: rotate(-45deg) translate3d(30px, 0, 0);
     transform: rotate(-45deg) translate3d(30px, 0, 0);
-    transition: opacity .2s ease-in-out, -webkit-transform .2s ease-in-out;
-    transition: opacity .2s ease-in-out, transform .2s ease-in-out;
-    transition: opacity .2s ease-in-out, transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
-  .menu-btn--close5.open .menu-btn__line--1 {
+    transition: opacity .2s ease-in-out, -webkit-transform .2s ease-in-out;
+    transition: opacity .2s ease-in-out, transform .2s ease-in-out;
+    transition: opacity .2s ease-in-out, transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
+  .menu-btn_close5.open .menu-btn__line_1 {
     width: 0;
     transition: width .2s ease-in-out; }
-  .menu-btn--close5.open .menu-btn__line--2 {
+  .menu-btn_close5.open .menu-btn__line_2 {
     width: 0;
     transition: width .2s ease-in-out .1s; }
-  .menu-btn--close5.open .menu-btn__line--3 {
+  .menu-btn_close5.open .menu-btn__line_3 {
     width: 0;
     transition: width .2s ease-in-out .2s; }
-  .menu-btn--close5.open .menu-btn__line--4 {
+  .menu-btn_close5.open .menu-btn__line_4 {
     opacity: 1;
     -webkit-transform: rotate(45deg) translate3d(0, 0, 0);
     transform: rotate(45deg) translate3d(0, 0, 0);
-    transition: opacity .2s ease-in-out .2s, -webkit-transform .2s ease-in-out .2s;
-    transition: opacity .2s ease-in-out .2s, transform .2s ease-in-out .2s;
-    transition: opacity .2s ease-in-out .2s, transform .2s ease-in-out .2s, -webkit-transform .2s ease-in-out .2s; }
-  .menu-btn--close5.open .menu-btn__line--5 {
+    transition: opacity .2s ease-in-out .2s, -webkit-transform .2s ease-in-out .2s;
+    transition: opacity .2s ease-in-out .2s, transform .2s ease-in-out .2s;
+    transition: opacity .2s ease-in-out .2s, transform .2s ease-in-out .2s, -webkit-transform .2s ease-in-out .2s; }
+  .menu-btn_close5.open .menu-btn__line_5 {
     opacity: 1;
     -webkit-transform: rotate(-45deg) translate3d(0, 0, 0);
     transform: rotate(-45deg) translate3d(0, 0, 0);
-    transition: opacity .2s ease-in-out .4s, -webkit-transform .2s ease-in-out .4s;
-    transition: opacity .2s ease-in-out .4s, transform .2s ease-in-out .4s;
-    transition: opacity .2s ease-in-out .4s, transform .2s ease-in-out .4s, -webkit-transform .2s ease-in-out .4s; }
-  .menu-btn--close6 .menu-btn__icon {
+    transition: opacity .2s ease-in-out .4s, -webkit-transform .2s ease-in-out .4s;
+    transition: opacity .2s ease-in-out .4s, transform .2s ease-in-out .4s;
+    transition: opacity .2s ease-in-out .4s, transform .2s ease-in-out .4s, -webkit-transform .2s ease-in-out .4s; }
+  .menu-btn_close6 .menu-btn__icon {
     transition: -webkit-transform 0s ease-in-out;
     transition: transform 0s ease-in-out;
     transition: transform 0s ease-in-out, -webkit-transform 0s ease-in-out; }
-  .menu-btn--close6 .menu-btn__line--1 {
-    transition: opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .3s;
-    transition: transform .2s ease-in-out .3s, opacity 0s ease-in-out .4s;
-    transition: transform .2s ease-in-out .3s, opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .3s; }
-  .menu-btn--close6 .menu-btn__line--2 {
+  .menu-btn_close6 .menu-btn__line_1 {
+    transition: opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .3s;
+    transition: transform .2s ease-in-out .3s, opacity 0s ease-in-out .4s;
+    transition: transform .2s ease-in-out .3s, opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .3s; }
+  .menu-btn_close6 .menu-btn__line_2 {
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
-  .menu-btn--close6 .menu-btn__line--2:before {
+  .menu-btn_close6 .menu-btn__line_2:before {
     content: '';
     position: absolute;
     width: 100%;
@@ -266,194 +241,208 @@
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
-  .menu-btn--close6 .menu-btn__line--3 {
-    transition: opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .3s;
-    transition: transform .2s ease-in-out .3s, opacity 0s ease-in-out .4s;
-    transition: transform .2s ease-in-out .3s, opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .3s; }
-  .menu-btn--close6.open .menu-btn__icon {
+  .menu-btn_close6 .menu-btn__line_3 {
+    transition: opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .3s;
+    transition: transform .2s ease-in-out .3s, opacity 0s ease-in-out .4s;
+    transition: transform .2s ease-in-out .3s, opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .3s; }
+  .menu-btn_close6.open .menu-btn__icon {
     -webkit-transform: translate(-50%, -50%) rotate(90deg);
     -ms-transform: translate(-50%, -50%) rotate(90deg);
     transform: translate(-50%, -50%) rotate(90deg);
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
-  .menu-btn--close6.open .menu-btn__line--1 {
+  .menu-btn_close6.open .menu-btn__line_1 {
     opacity: 0;
     -webkit-transform: translate3d(0, 9px, 0);
     transform: translate3d(0, 9px, 0);
-    transition: opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .2s;
-    transition: transform .2s ease-in-out .2s, opacity 0s ease-in-out .4s;
-    transition: transform .2s ease-in-out .2s, opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .2s; }
-  .menu-btn--close6.open .menu-btn__line--2 {
+    transition: opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .2s;
+    transition: transform .2s ease-in-out .2s, opacity 0s ease-in-out .4s;
+    transition: transform .2s ease-in-out .2s, opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .2s; }
+  .menu-btn_close6.open .menu-btn__line_2 {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
     transition: -webkit-transform .2s ease-in-out .5s;
     transition: transform .2s ease-in-out .5s;
     transition: transform .2s ease-in-out .5s, -webkit-transform .2s ease-in-out .5s; }
-  .menu-btn--close6.open .menu-btn__line--2:before {
+  .menu-btn_close6.open .menu-btn__line_2:before {
     -webkit-transform: rotate(-90deg);
     -ms-transform: rotate(-90deg);
     transform: rotate(-90deg);
     transition: -webkit-transform .2s ease-in-out .5s;
     transition: transform .2s ease-in-out .5s;
     transition: transform .2s ease-in-out .5s, -webkit-transform .2s ease-in-out .5s; }
-  .menu-btn--close6.open .menu-btn__line--3 {
+  .menu-btn_close6.open .menu-btn__line_3 {
     opacity: 0;
     -webkit-transform: translate3d(0, -9px, 0);
     transform: translate3d(0, -9px, 0);
-    transition: opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .2s;
-    transition: transform .2s ease-in-out .2s, opacity 0s ease-in-out .4s;
-    transition: transform .2s ease-in-out .2s, opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .2s; }
-  .menu-btn--back1 .menu-btn__line--1,
-  .menu-btn--back1 .menu-btn__line--3 {
+    transition: opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .2s;
+    transition: transform .2s ease-in-out .2s, opacity 0s ease-in-out .4s;
+    transition: transform .2s ease-in-out .2s, opacity 0s ease-in-out .4s, -webkit-transform .2s ease-in-out .2s; }
+  .menu-btn_back1 .menu-btn__line_1,
+  .menu-btn_back1 .menu-btn__line_3 {
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back1.open .menu-btn__line--1 {
+  .menu-btn_back1.open .menu-btn__line_1 {
     -webkit-transform: translate3d(-6.5px, 1px, 0) rotate(135deg) scaleX(0.7);
     transform: translate3d(-6.5px, 1px, 0) rotate(135deg) scaleX(0.7);
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back1.open .menu-btn__line--3 {
+  .menu-btn_back1.open .menu-btn__line_3 {
     -webkit-transform: translate3d(-6.5px, -1px, 0) rotate(-135deg) scaleX(0.7);
     transform: translate3d(-6.5px, -1px, 0) rotate(-135deg) scaleX(0.7);
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back2 .menu-btn__line--1,
-  .menu-btn--back2 .menu-btn__line--3 {
+  .menu-btn_back2 .menu-btn__line_1,
+  .menu-btn_back2 .menu-btn__line_3 {
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back2.open .menu-btn__line--1 {
+  .menu-btn_back2.open .menu-btn__line_1 {
     -webkit-transform: translate3d(-6.5px, 1px, 0) rotate(-225deg) scaleX(0.7);
     transform: translate3d(-6.5px, 1px, 0) rotate(-225deg) scaleX(0.7);
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back2.open .menu-btn__line--3 {
+  .menu-btn_back2.open .menu-btn__line_3 {
     -webkit-transform: translate3d(-6.5px, -1px, 0) rotate(225deg) scaleX(0.7);
     transform: translate3d(-6.5px, -1px, 0) rotate(225deg) scaleX(0.7);
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back3 .menu-btn__line--1 {
+  .menu-btn_back3 .menu-btn__line_1 {
     transition: -webkit-transform .2s ease-in-out .2s;
     transition: transform .2s ease-in-out .2s;
     transition: transform .2s ease-in-out .2s, -webkit-transform .2s ease-in-out .2s; }
-  .menu-btn--back3 .menu-btn__line--2 {
+  .menu-btn_back3 .menu-btn__line_2 {
     transition: -webkit-transform .2s ease-in-out .1s;
     transition: transform .2s ease-in-out .1s;
     transition: transform .2s ease-in-out .1s, -webkit-transform .2s ease-in-out .1s; }
-  .menu-btn--back3 .menu-btn__line--3 {
+  .menu-btn_back3 .menu-btn__line_3 {
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
-  .menu-btn--back3.open .menu-btn__line--1 {
+  .menu-btn_back3.open .menu-btn__line_1 {
     -webkit-transform: translate3d(-6.5px, 1px, 0) rotate(135deg) scaleX(0.7);
     transform: translate3d(-6.5px, 1px, 0) rotate(135deg) scaleX(0.7);
     transition: -webkit-transform .2s ease-in-out;
     transition: transform .2s ease-in-out;
     transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
-  .menu-btn--back3.open .menu-btn__line--2 {
+  .menu-btn_back3.open .menu-btn__line_2 {
     -webkit-transform: rotate(180deg);
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
     transition: -webkit-transform .2s ease-in-out .1s;
     transition: transform .2s ease-in-out .1s;
     transition: transform .2s ease-in-out .1s, -webkit-transform .2s ease-in-out .1s; }
-  .menu-btn--back3.open .menu-btn__line--3 {
+  .menu-btn_back3.open .menu-btn__line_3 {
     -webkit-transform: translate3d(-6.5px, -1px, 0) rotate(225deg) scaleX(0.7);
     transform: translate3d(-6.5px, -1px, 0) rotate(225deg) scaleX(0.7);
     transition: -webkit-transform .2s ease-in-out .2s;
     transition: transform .2s ease-in-out .2s;
     transition: transform .2s ease-in-out .2s, -webkit-transform .2s ease-in-out .2s; }
-  .menu-btn--back4 .menu-btn__line--1 {
+  .menu-btn_back4 .menu-btn__line_1 {
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back4 .menu-btn__line--2 {
+  .menu-btn_back4 .menu-btn__line_2 {
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back4 .menu-btn__line--3 {
+  .menu-btn_back4 .menu-btn__line_3 {
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back4.open .menu-btn__line--1 {
+  .menu-btn_back4.open .menu-btn__line_1 {
     -webkit-transform: translate3d(-6.5px, 16px, 0) rotate(-135deg) scaleX(0.7);
     transform: translate3d(-6.5px, 16px, 0) rotate(-135deg) scaleX(0.7);
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back4.open .menu-btn__line--2 {
+  .menu-btn_back4.open .menu-btn__line_2 {
     -webkit-transform: rotate(-180deg);
     -ms-transform: rotate(-180deg);
     transform: rotate(-180deg);
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back4.open .menu-btn__line--3 {
+  .menu-btn_back4.open .menu-btn__line_3 {
     -webkit-transform: translate3d(-6.5px, -16px, 0) rotate(-225deg) scaleX(0.7);
     transform: translate3d(-6.5px, -16px, 0) rotate(-225deg) scaleX(0.7);
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back5 .menu-btn__icon {
+  .menu-btn_back5 .menu-btn__icon {
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back5 .menu-btn__line--1,
-  .menu-btn--back5 .menu-btn__line--3 {
+  .menu-btn_back5 .menu-btn__line_1,
+  .menu-btn_back5 .menu-btn__line_3 {
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back5.open .menu-btn__icon {
+  .menu-btn_back5.open .menu-btn__icon {
     -webkit-transform: rotate(180deg) translate(50%, 50%);
     -ms-transform: rotate(180deg) translate(50%, 50%);
     transform: rotate(180deg) translate(50%, 50%);
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back5.open .menu-btn__line--1 {
+  .menu-btn_back5.open .menu-btn__line_1 {
     -webkit-transform: translate3d(6.5px, 1px, 0) rotate(45deg) scaleX(0.7);
     transform: translate3d(6.5px, 1px, 0) rotate(45deg) scaleX(0.7);
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back5.open .menu-btn__line--3 {
+  .menu-btn_back5.open .menu-btn__line_3 {
     -webkit-transform: translate3d(6.5px, -1px, 0) rotate(-45deg) scaleX(0.7);
     transform: translate3d(6.5px, -1px, 0) rotate(-45deg) scaleX(0.7);
     transition: -webkit-transform .3s ease-in-out;
     transition: transform .3s ease-in-out;
     transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back6 .menu-btn__line--1 {
-    transition: top .2s ease-in-out .3s, -webkit-transform .3s ease-in-out;
-    transition: transform .3s ease-in-out, top .2s ease-in-out .3s;
-    transition: transform .3s ease-in-out, top .2s ease-in-out .3s, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back6 .menu-btn__line--3 {
-    transition: bottom .2s ease-in-out .3s, -webkit-transform .3s ease-in-out;
-    transition: transform .3s ease-in-out, bottom .2s ease-in-out .3s;
-    transition: transform .3s ease-in-out, bottom .2s ease-in-out .3s, -webkit-transform .3s ease-in-out; }
-  .menu-btn--back6.open .menu-btn__line--1 {
+  .menu-btn_back6 .menu-btn__line_1 {
+    transition: top .2s ease-in-out .3s, -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, top .2s ease-in-out .3s;
+    transition: transform .3s ease-in-out, top .2s ease-in-out .3s, -webkit-transform .3s ease-in-out; }
+  .menu-btn_back6 .menu-btn__line_3 {
+    transition: bottom .2s ease-in-out .3s, -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, bottom .2s ease-in-out .3s;
+    transition: transform .3s ease-in-out, bottom .2s ease-in-out .3s, -webkit-transform .3s ease-in-out; }
+  .menu-btn_back6.open .menu-btn__line_1 {
     top: 9px;
     -webkit-transform: translate3d(-6.5px, -7.5px, 0) rotate(-45deg) scaleX(0.7);
     transform: translate3d(-6.5px, -7.5px, 0) rotate(-45deg) scaleX(0.7);
-    transition: top .2s ease-in-out,  -webkit-transform .3s ease-in-out .2s;
-    transition: top .2s ease-in-out,  transform .3s ease-in-out .2s;
-    transition: top .2s ease-in-out,  transform .3s ease-in-out .2s,  -webkit-transform .3s ease-in-out .2s; }
-  .menu-btn--back6.open .menu-btn__line--3 {
+    transition: top .2s ease-in-out, -webkit-transform .3s ease-in-out .2s;
+    transition: top .2s ease-in-out, transform .3s ease-in-out .2s;
+    transition: top .2s ease-in-out, transform .3s ease-in-out .2s, -webkit-transform .3s ease-in-out .2s; }
+  .menu-btn_back6.open .menu-btn__line_3 {
     bottom: 9px;
     -webkit-transform: translate3d(-6.5px, 8px, 0) rotate(45deg) scaleX(0.7);
     transform: translate3d(-6.5px, 8px, 0) rotate(45deg) scaleX(0.7);
-    transition: bottom .2s ease-in-out,  -webkit-transform .3s ease-in-out .2s;
-    transition: bottom .2s ease-in-out,  transform .3s ease-in-out .2s;
-    transition: bottom .2s ease-in-out,  transform .3s ease-in-out .2s,  -webkit-transform .3s ease-in-out .2s; }
+    transition: bottom .2s ease-in-out, -webkit-transform .3s ease-in-out .2s;
+    transition: bottom .2s ease-in-out, transform .3s ease-in-out .2s;
+    transition: bottom .2s ease-in-out, transform .3s ease-in-out .2s, -webkit-transform .3s ease-in-out .2s; }
 
 .menu-btn {
-  display: block; }
+  display: block;
+  position: relative;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 63; }
+  .menu-btn_absolute {
+    position: absolute; }
+  .menu-btn_right {
+    right: 0; }
+  .menu-btn_left {
+    left: 0; }
+  .menu-btn_fixed {
+    position: fixed; }
 
 .menu-panel:before {
   content: ""; }

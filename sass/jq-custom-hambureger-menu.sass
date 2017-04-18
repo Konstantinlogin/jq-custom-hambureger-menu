@@ -11,7 +11,7 @@ $menu-btn-line-radius: $menu-btn-line-size
 $menu-btn-to-translate: ($menu-btn-height - $menu-btn-line-size) / 2
 $menu-btn-bounce: cubic-bezier(.87,-.50,.19,1.50)
 
-@import hamburgers.scss
+@import hamburger-variants.sass
 
 // .menu-btn
 //   display: none
@@ -26,6 +26,24 @@ $menu-btn-bounce: cubic-bezier(.87,-.50,.19,1.50)
 
 .menu-btn
   display: block
+  position: relative
+  height: $menu-btn-size
+  width: $menu-btn-size
+  cursor: pointer
+  overflow: hidden
+  z-index: 63
+
+  &_absolute
+    position: absolute
+
+  &_right 
+    right: 0
+  
+  &_left 
+    left: 0
+
+  &_fixed 
+    position: fixed
 
 .menu-panel
   &:before
